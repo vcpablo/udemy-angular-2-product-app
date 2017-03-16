@@ -3,10 +3,14 @@ import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { HomePage } from '../pages/home/home';
+import { ProductPage } from '../pages/product/product';
+import { CategoryService } from '../providers/category-service';
+import { CategoryModalPage } from '../pages/category-modal/category-modal';
 
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers:[CategoryService]
 })
 export class MyApp {
   rootPage = HomePage;
