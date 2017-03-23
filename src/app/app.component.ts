@@ -5,12 +5,14 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 import { HomePage } from '../pages/home/home';
 import { ProductPage } from '../pages/product/product';
 import { CategoryService } from '../providers/category-service';
+import { ProductService } from '../providers/product-service';
 import { CategoryModalPage } from '../pages/category-modal/category-modal';
+import { ProductModalPage } from '../pages/product-modal/product-modal';
 
 
 @Component({
   templateUrl: 'app.html',
-  providers:[CategoryService]
+  providers:[CategoryService, ProductService]
 })
 export class MyApp {
   rootPage = HomePage;

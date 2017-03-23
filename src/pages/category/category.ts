@@ -37,7 +37,7 @@ export class CategoryPage {
     modal.onDidDismiss((category) => {
 
 
-          if(undefined !== category) {
+          if(category) {
             this.categories.unshift(category)
 
             let toastOptions = {
